@@ -39,6 +39,20 @@ btnTambah.addEventListener("click", function() {
       listbaru.remove();
    })
 
+   btnEdit.addEventListener("click", function(){
+    let tugasBaru = prompt("Edit tugas", teksTugas);
+    let tanggalBaru = prompt("Edit tanggal", tanggalTugas);
+
+    if(tugasBaru !== null && tanggalBaru !== null){
+
+        teksTugas = tugasBaru;
+        tanggalTugas = tanggalBaru;
+
+        spanbaru.innerHTML = teksTugas + " - " + tanggalTugas;
+    }
+
+  })
+
     const warnabaru = document.querySelectorAll("li");
   warnabaru.forEach((item, index) => {
     if(index % 2 === 0) {
