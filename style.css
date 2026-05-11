@@ -28,6 +28,7 @@ input {
     border: 2px solid #111827;
 }
 
+
 .btnHapus{
     background-color: red;
     color: white;
@@ -72,6 +73,7 @@ li {
     padding: 5px;
     border-bottom: 1px solid #ddd;
     width: 580px;
+    margin-bottom: 10px;
 } 
 
 
