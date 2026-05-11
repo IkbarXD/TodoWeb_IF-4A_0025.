@@ -33,6 +33,13 @@ input {
     color: white;
     
 }
+
+.btnEdit{
+    background-color: rgb(238, 255, 0);
+    color: white;
+    
+}
+
 button {
     padding: 10px 14px;
     border: none;
