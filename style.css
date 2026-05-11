@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+    color: blue ;
+
+}
+
+.form{
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    background: blue;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: blue;
+
+}
+
+li {
+    background: white;
+    display: flex;
+    /* align-items: center;
+    justify-content: space-between; */
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+} 
+
+.hapus {
+    background: red;
+
+}
+
+.hapus:hover {
+    background: red;
+}
+
