@@ -32,6 +32,7 @@ btnTambah.addEventListener("click", function() {
   btnEdit.className = "btnEdit"
 
    spanbaru.innerHTML = teksTugas + " - " + tanggalTugas + " = " + status;
+   spanbaru.style.color = "red";
    btnHapus.innerHTML = "X"
    btnEdit.innerHTML = "Edit"
    btnDone.innerHTML = "Done"
@@ -52,13 +53,13 @@ btnTambah.addEventListener("click", function() {
    btnDone.addEventListener("click", function(){
       status = "Done";
       btnEdit.style.display = "none";
-      spanbaru.innerHTML = teksTugas + " - " + tanggalTugas + " - " + status;
+      spanbaru.innerHTML = teksTugas + " - " + tanggalTugas + " = " + status;
+      spanbaru.style.color = "green";
    })
 
    btnEdit.addEventListener("click", function(){
     let tugasBaru = prompt("Edit tugas", teksTugas);
     let tanggalBaru = prompt("Edit tanggal", tanggalTugas);
-
      
 
     if(tugasBaru !== null && tanggalBaru !== null){
