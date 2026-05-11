@@ -40,6 +40,12 @@ input {
     
 }
 
+.btnDone{
+    background-color: green;
+    color: white;
+    
+}
+
 button {
     padding: 10px 14px;
     border: none;
