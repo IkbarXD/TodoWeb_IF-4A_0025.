@@ -25,10 +25,14 @@ body{
 input {
     flex: 1;
     padding: 10px;
-    border: 2px solid #111827
-    border-radius: 6px;
+    border: 2px solid #111827;
 }
 
+.btnHapus{
+    background-color: red;
+    color: white;
+    
+}
 button {
     padding: 10px 14px;
     border: none;
@@ -55,12 +59,8 @@ li {
     padding: 5px;
     border-bottom: 1px solid #ddd;
     width: 580px;
-    flex-direction: row;
 } 
 
-#daftarTugas{
-    border: 1px solid black;
-}
 
 .hapus {
     background: red;

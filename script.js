@@ -22,9 +22,14 @@ btnTambah.addEventListener("click", function() {
 
   let listbaru = document.createElement("li")
   let spanbaru = document.createElement("span")
+  let div = document.createElement("div")
   let btnHapus = document.createElement("button")
   let btnEdit = document.createElement("button")
   let btnDone = document.createElement("button")
+
+  btnHapus.className = "btnHapus"
+  btnDone.className = "btnDone"
+  btnEdit.className = "btnEdit"
 
    spanbaru.innerHTML = teksTugas + " - " + tanggalTugas + " = " + status;
    btnHapus.innerHTML = "X"
@@ -32,9 +37,10 @@ btnTambah.addEventListener("click", function() {
    btnDone.innerHTML = "Done"
 
    listbaru.appendChild(spanbaru);
-   listbaru.appendChild(btnHapus);
-   listbaru.appendChild(btnEdit);
-   listbaru.appendChild(btnDone);
+   listbaru.appendChild(div);
+   div.appendChild(btnHapus);
+   div.appendChild(btnEdit);
+   div.appendChild(btnDone);
 
 
     daftarTugas.appendChild(listbaru);
@@ -64,15 +70,6 @@ btnTambah.addEventListener("click", function() {
     }
 
   })
-
-    const warnabaru = document.querySelectorAll("li");
-  warnabaru.forEach((item, index) => {
-    if(index % 2 === 0) {
-        item.style.color = "red";
-    } else {
-        item.style.color = "green";
-    }
-  });
   
   inputTugas.value = "";
   inputTanggal.value = "";
