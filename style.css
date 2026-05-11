@@ -32,12 +32,14 @@ input {
 .btnHapus{
     background-color: red;
     color: white;
+    margin-right: 10px;
     
 }
 
 .btnEdit{
     background-color: rgb(238, 255, 0);
     color: white;
+    margin-right: 10px;
     
 }
 
@@ -71,7 +73,7 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #000000;
     width: 580px;
     margin-bottom: 10px;
 } 
