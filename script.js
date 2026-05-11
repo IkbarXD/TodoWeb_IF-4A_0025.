@@ -24,14 +24,17 @@ btnTambah.addEventListener("click", function() {
   let spanbaru = document.createElement("span")
   let btnHapus = document.createElement("button")
   let btnEdit = document.createElement("button")
+  let btnDone = document.createElement("button")
 
    spanbaru.innerHTML = teksTugas + " - " + tanggalTugas + " = " + status;
    btnHapus.innerHTML = "X"
    btnEdit.innerHTML = "Edit"
+   btnDone.innerHTML = "Done"
 
    listbaru.appendChild(spanbaru);
    listbaru.appendChild(btnHapus);
    listbaru.appendChild(btnEdit);
+   listbaru.appendChild(btnDone);
 
 
     daftarTugas.appendChild(listbaru);
