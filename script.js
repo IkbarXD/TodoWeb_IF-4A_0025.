@@ -7,6 +7,7 @@ btnTambah.addEventListener("click", function() {
 
   let teksTugas = inputTugas.value;
   let tanggalTugas = inputTanggal.value;
+  let status = "Progres"
 
   if(teksTugas === ""){
     alert("Data Harus Dimasukkan");
@@ -24,7 +25,7 @@ btnTambah.addEventListener("click", function() {
   let btnHapus = document.createElement("button")
   let btnEdit = document.createElement("button")
 
-   spanbaru.innerHTML = teksTugas + " - " + tanggalTugas;
+   spanbaru.innerHTML = teksTugas + " - " + tanggalTugas + " = " + status;
    btnHapus.innerHTML = "X"
    btnEdit.innerHTML = "Edit"
 
