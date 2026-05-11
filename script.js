@@ -43,9 +43,16 @@ btnTambah.addEventListener("click", function() {
       listbaru.remove();
    })
 
+   btnDone.addEventListener("click", function(){
+      status = "Done";
+      spanbaru.innerHTML = teksTugas + " - " + tanggalTugas + " - " + status;
+   })
+
    btnEdit.addEventListener("click", function(){
     let tugasBaru = prompt("Edit tugas", teksTugas);
     let tanggalBaru = prompt("Edit tanggal", tanggalTugas);
+
+     
 
     if(tugasBaru !== null && tanggalBaru !== null){
 
