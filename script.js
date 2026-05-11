@@ -45,6 +45,7 @@ btnTambah.addEventListener("click", function() {
 
    btnDone.addEventListener("click", function(){
       status = "Done";
+      btnEdit.style.display = "none";
       spanbaru.innerHTML = teksTugas + " - " + tanggalTugas + " - " + status;
    })
 
